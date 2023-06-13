@@ -1,0 +1,26 @@
+{
+  "name": "todo-list-api",
+  "version": "1.0.0",
+  "description": "Todo List API",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "build": "tsc",
+    "watch": "tsc --watch",
+    "start": "node build/index.js",
+    "dev": "concurrently --kill-others 'npm run watch' 'NODE_ENV=development nodemon'",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "fastify": "^4.18.0"
+  },
+  "devDependencies": {
+    "@types/node": "^20.3.1",
+    "concurrently": "^8.2.0",
+    "nodemon": "^2.0.22",
+    "typescript": "^5.1.3"
+  }
+}
