@@ -1,4 +1,5 @@
 # TODO
-[] Docker
-[] user api
-[] task api
+
+- [x] Docker
+- [ ] user api
+- [ ] task api
