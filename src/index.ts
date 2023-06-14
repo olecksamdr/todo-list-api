@@ -6,11 +6,13 @@ server.get("/ping", async (request, reply) => {
   return "pong\n";
 });
 
-server.listen({ port: 8080 }, (err, address) => {
+const { ADDRESS = "localhost", PORT = "3000" } = process.env;
+
+server.listen({ host: ADDRESS, port: parseInt(PORT, 10) }, (err, address) => {
   if (err) {
     console.error(err);
     process.exit(1);
   }
 
-  console.log(`Server listening at ${address}`);
+  console.log(`server listening at ${address}`);
 });

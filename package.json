@@ -8,7 +8,7 @@
     "build": "tsc",
     "watch": "tsc --watch",
     "start": "node build/index.js",
-    "dev": "concurrently --kill-others 'npm run watch' 'NODE_ENV=development nodemon'",
+    "dev": "nodemon",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
@@ -19,7 +19,6 @@
   },
   "devDependencies": {
     "@types/node": "^20.3.1",
-    "concurrently": "^8.2.0",
     "nodemon": "^2.0.22",
     "typescript": "^5.1.3"
   }
