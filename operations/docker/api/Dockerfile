@@ -30,8 +30,8 @@ ENV NODE_ENV=${NODE_ENV}
 # we need to bind to an IP address that is accessible from outside the container.
 # Binding to 0.0.0.0 is a way to bind to all available network interfaces on the container,
 # which means that Fastify will be able to receive connections from any IP address that can reach the container.
-ARG ADDRESS=0.0.0.0
-ENV ADDRESS $ADDRESS
+ARG HOST=0.0.0.0
+ENV HOST $HOST
 
 # default to port 3000 for node, and 9229 and 9230 (tests) for debug
 ARG PORT=3000
